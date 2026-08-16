@@ -1,4 +1,3 @@
-# Date: 2026-07-15
 from typing import List
 
 
