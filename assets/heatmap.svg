@@ -15,6 +15,7 @@
 <rect x="16" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="24" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="24" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="24" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Sep</text>
 <rect x="24" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="24" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="24" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -22,7 +23,6 @@
 <rect x="24" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="32" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="32" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="32" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Sep</text>
 <rect x="32" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="32" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="32" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -46,6 +46,7 @@
 <rect x="56" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="56" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="56" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="56" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Oct</text>
 <rect x="56" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="56" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="56" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -53,7 +54,6 @@
 <rect x="64" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="64" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="64" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="64" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Oct</text>
 <rect x="64" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="64" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="64" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -63,14 +63,14 @@
 <rect x="72" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="72" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="72" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="72" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<rect x="72" y="66" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.4"/>
 <rect x="80" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="80" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="80" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="80" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="80" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="80" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="80" y="66" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.4"/>
+<rect x="80" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="88" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="88" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="88" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -78,6 +78,7 @@
 <rect x="88" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="88" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="88" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="88" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Nov</text>
 <rect x="96" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="96" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="96" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -85,7 +86,6 @@
 <rect x="96" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="96" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="96" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="96" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Nov</text>
 <rect x="104" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="104" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="104" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -109,6 +109,7 @@
 <rect x="120" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="128" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="128" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="128" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Dec</text>
 <rect x="128" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="128" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="128" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -116,7 +117,6 @@
 <rect x="128" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="136" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="136" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="136" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Dec</text>
 <rect x="136" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="136" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="136" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -141,6 +141,7 @@
 <rect x="160" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="160" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="160" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="160" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Jan</text>
 <rect x="160" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="160" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="168" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -148,7 +149,6 @@
 <rect x="168" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="168" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="168" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="168" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Jan</text>
 <rect x="168" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="168" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="176" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -173,6 +173,7 @@
 <rect x="192" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="192" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="200" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="200" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Feb</text>
 <rect x="200" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="200" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="200" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -180,7 +181,6 @@
 <rect x="200" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="200" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="208" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="208" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Feb</text>
 <rect x="208" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="208" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="208" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -202,6 +202,7 @@
 <rect x="224" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="224" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="232" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="232" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Mar</text>
 <rect x="232" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="232" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="232" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -209,7 +210,6 @@
 <rect x="232" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="232" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="240" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="240" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Mar</text>
 <rect x="240" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="240" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="240" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -234,6 +234,7 @@
 <rect x="264" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="264" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="264" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="264" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Apr</text>
 <rect x="264" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="264" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="264" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -241,7 +242,6 @@
 <rect x="272" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="272" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="272" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="272" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Apr</text>
 <rect x="272" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="272" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="272" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -265,6 +265,7 @@
 <rect x="296" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="296" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="296" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="296" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">May</text>
 <rect x="296" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="304" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="304" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -272,7 +273,6 @@
 <rect x="304" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="304" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="304" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="304" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">May</text>
 <rect x="304" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="312" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="312" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -297,6 +297,7 @@
 <rect x="328" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="336" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="336" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="336" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Jun</text>
 <rect x="336" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="336" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="336" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -304,7 +305,6 @@
 <rect x="336" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="344" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="344" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="344" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Jun</text>
 <rect x="344" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="344" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="344" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -325,31 +325,31 @@
 <rect x="360" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="360" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="368" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="368" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<rect x="368" y="26" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.4"/>
 <rect x="368" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="368" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="368" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Jul</text>
 <rect x="368" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="368" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="368" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="376" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="376" y="26" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.4"/>
-<rect x="376" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="376" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="376" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Jul</text>
+<rect x="376" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<rect x="376" y="34" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.4"/>
+<rect x="376" y="42" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.4"/>
 <rect x="376" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="376" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="376" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="384" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="384" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="384" y="34" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.4"/>
-<rect x="384" y="42" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.4"/>
+<rect x="384" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<rect x="384" y="42" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.62"/>
 <rect x="384" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="384" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="384" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="392" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="392" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="392" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="392" y="42" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.62"/>
+<rect x="392" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="392" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="392" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="392" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -360,6 +360,7 @@
 <rect x="400" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="400" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="400" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
+<text x="400" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Aug</text>
 <rect x="408" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="408" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="408" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -367,7 +368,6 @@
 <rect x="408" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="408" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="408" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="408" y="12" font-size="8" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Aug</text>
 <rect x="416" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="416" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="416" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
@@ -375,13 +375,8 @@
 <rect x="416" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="416" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="416" y="66" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="424" y="18" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="424" y="26" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="424" y="34" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="424" y="42" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="424" y="50" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<rect x="424" y="58" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
-<text x="8" y="96" font-size="9" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">6 in the last year</text>
+<rect x="424" y="18" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.4"/>
+<text x="8" y="96" font-size="9" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">7 in the last year</text>
 <text x="357" y="96" font-size="8" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">less</text>
 <rect x="362" y="88" width="6.4" height="6.4" rx="1.5" fill="#8b949e" opacity="0.14"/>
 <rect x="370" y="88" width="6.4" height="6.4" rx="1.5" fill="#4c8eda" opacity="0.4"/>

@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 240" width="440" height="240" role="img" font-family="system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-<path d="M112 48 A74 74 0 1 1 86.69 191.54 L95.93 166.17 A47 47 0 1 0 112 75 Z" fill="#00b8a3" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" opacity="1"/>
-<path d="M86.69 191.54 A74 74 0 0 1 112 48 L112 75 A47 47 0 0 0 95.93 166.17 Z" fill="#ffb800" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" opacity="1"/>
-<text x="112" y="124" font-size="26" fill="#4c8eda" text-anchor="middle" font-weight="700" opacity="1">18</text>
+<path d="M112 48 A74 74 0 1 1 99.82 194.99 L104.26 168.36 A47 47 0 1 0 112 75 Z" fill="#00b8a3" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" opacity="1"/>
+<path d="M99.82 194.99 A74 74 0 0 1 112 48 L112 75 A47 47 0 0 0 104.26 168.36 Z" fill="#ffb800" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" opacity="1"/>
+<text x="112" y="124" font-size="26" fill="#4c8eda" text-anchor="middle" font-weight="700" opacity="1">19</text>
 <text x="112" y="141" font-size="10" fill="#8b949e" text-anchor="middle" font-weight="normal" opacity="1">solved</text>
 <rect x="210" y="65" width="10" height="10" rx="2.5" fill="#00b8a3" opacity="1"/>
 <text x="226" y="74" font-size="12" fill="#00b8a3" text-anchor="start" font-weight="600" opacity="1">Easy</text>
-<text x="426" y="74" font-size="11" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">10 · 56%</text>
+<text x="426" y="74" font-size="11" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">10 · 53%</text>
 <rect x="226" y="81" width="200" height="5" rx="2.5" fill="#8b949e" opacity="0.22"/>
-<rect x="226" y="81" width="111.11" height="5" rx="2.5" fill="#00b8a3" opacity="1"/>
+<rect x="226" y="81" width="105.26" height="5" rx="2.5" fill="#00b8a3" opacity="1"/>
 <rect x="210" y="111" width="10" height="10" rx="2.5" fill="#ffb800" opacity="1"/>
 <text x="226" y="120" font-size="12" fill="#ffb800" text-anchor="start" font-weight="600" opacity="1">Medium</text>
-<text x="426" y="120" font-size="11" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">8 · 44%</text>
+<text x="426" y="120" font-size="11" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">9 · 47%</text>
 <rect x="226" y="127" width="200" height="5" rx="2.5" fill="#8b949e" opacity="0.22"/>
-<rect x="226" y="127" width="88.89" height="5" rx="2.5" fill="#ffb800" opacity="1"/>
+<rect x="226" y="127" width="94.74" height="5" rx="2.5" fill="#ffb800" opacity="1"/>
 <rect x="210" y="157" width="10" height="10" rx="2.5" fill="#ff375f" opacity="1"/>
 <text x="226" y="166" font-size="12" fill="#ff375f" text-anchor="start" font-weight="600" opacity="1">Hard</text>
 <text x="426" y="166" font-size="11" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">0 · 0%</text>
