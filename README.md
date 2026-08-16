@@ -3,20 +3,20 @@
 My solved LeetCode problems, one directory per question.
 This page is generated from every `info.md` by [`generate_readme.py`](generate_readme.py).
 
-![Solved: 19](https://img.shields.io/badge/Solved-19-4c8eda) ![Easy: 10](https://img.shields.io/badge/Easy-10-00b8a3) ![Medium: 9](https://img.shields.io/badge/Medium-9-ffb800) ![Hard: 0](https://img.shields.io/badge/Hard-0-ff375f)
+![Solved: 20](https://img.shields.io/badge/Solved-20-4c8eda) ![Easy: 10](https://img.shields.io/badge/Easy-10-00b8a3) ![Medium: 10](https://img.shields.io/badge/Medium-10-ffb800) ![Hard: 0](https://img.shields.io/badge/Hard-0-ff375f)
 
 ## 📊 At a glance
 
 | | |
 |:--|:--|
-| **Problems solved** | 19 |
-| **Submissions recorded** | 19 |
-| **Easy** | `███████████░░░░░░░░░` 10 (53%) |
-| **Medium** | `█████████░░░░░░░░░░░` 9 (47%) |
+| **Problems solved** | 20 |
+| **Submissions recorded** | 20 |
+| **Easy** | `██████████░░░░░░░░░░` 10 (50%) |
+| **Medium** | `██████████░░░░░░░░░░` 10 (50%) |
 | **Hard** | `░░░░░░░░░░░░░░░░░░░░` 0 (0%) |
-| **Languages** | Python (18), C++ (1) |
-| **Avg. runtime beats** | 37.6% |
-| **Avg. memory beats** | 78.5% |
+| **Languages** | Python (19), C++ (1) |
+| **Avg. runtime beats** | 40.7% |
+| **Avg. memory beats** | 75.1% |
 | **First solve** | Jun 08, 2022 |
 | **Latest solve** | Aug 16, 2026 (today) |
 | **Longest streak** | 4 day(s) |
@@ -63,6 +63,7 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 | Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats |
 |:--|--:|:--|:--|:--|--:|--:|
 | 2026-08-16 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/description/) | Medium | Python | 71.68% | 71.68% |
+| 2026-08-16 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/description/) | Medium | Python | 100.00% | 10.35% |
 | 2026-07-15 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Python | 55.13% | 72.94% |
 | 2026-07-15 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | Medium | Python | 100.00% | 94.76% |
 | 2026-07-08 | 530 | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/) | Easy | Python | 100.00% | 67.13% |
@@ -71,7 +72,6 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 | 2025-10-18 | 714 | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) | Medium | Python | 98.75% | 100.00% |
 | 2025-01-10 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | Python | 25.08% | 100.00% |
 | 2023-10-08 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) | Easy | Python | 2.80% | 100.00% |
-| 2023-10-08 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium | Python | 7.02% | 100.00% |
 
 ---
 

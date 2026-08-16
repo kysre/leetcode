@@ -168,7 +168,9 @@ def parse_info_md(directory: Path) -> tuple[Problem | None, str | None]:
     if not solutions:
         return None, "solutions table has no data row"
 
-    problem = Problem(number, title, directory.name, difficulty, acceptance_rate, url, solutions)
+    problem = Problem(
+        number, title, directory.name, difficulty, acceptance_rate, url, solutions
+    )
     warning = None if problem.solved_on else "no valid solution date"
     return problem, warning
 
@@ -233,7 +235,9 @@ def compute_stats(problems: list[Problem], today: date) -> Stats:
 
     monthly: list[tuple[date, dict[str, int]]] = []
     if dated:
-        buckets: dict[date, dict[str, int]] = defaultdict(lambda: dict.fromkeys(DIFFICULTIES, 0))
+        buckets: dict[date, dict[str, int]] = defaultdict(
+            lambda: dict.fromkeys(DIFFICULTIES, 0)
+        )
         for day, problem in dated:
             buckets[month_floor(day)][problem.difficulty] += 1
         cursor, end = month_floor(dated[0][0]), month_floor(dated[-1][0])
@@ -256,7 +260,9 @@ def compute_stats(problems: list[Problem], today: date) -> Stats:
             current, cursor = current + 1, day
 
     day_counts = Counter(solve_dates)
-    best_day = max(day_counts.items(), key=lambda kv: (kv[1], kv[0])) if day_counts else None
+    best_day = (
+        max(day_counts.items(), key=lambda kv: (kv[1], kv[0])) if day_counts else None
+    )
 
     return Stats(
         problems=problems,
@@ -271,8 +277,12 @@ def compute_stats(problems: list[Problem], today: date) -> Stats:
         longest_streak=longest,
         current_streak=current,
         best_day=best_day,
-        avg_runtime_beats=mean([s.runtime_beats for s in solutions if s.runtime_beats is not None]),
-        avg_memory_beats=mean([s.memory_beats for s in solutions if s.memory_beats is not None]),
+        avg_runtime_beats=mean(
+            [s.runtime_beats for s in solutions if s.runtime_beats is not None]
+        ),
+        avg_memory_beats=mean(
+            [s.memory_beats for s in solutions if s.memory_beats is not None]
+        ),
     )
 
 
@@ -295,8 +305,16 @@ def svg(width: int, height: int, body: str) -> str:
     )
 
 
-def text(x: float, y: float, content: str, size: float = 12, fill: str = MUTED,
-         anchor: str = "start", weight: str = "normal", opacity: float = 1.0) -> str:
+def text(
+    x: float,
+    y: float,
+    content: str,
+    size: float = 12,
+    fill: str = MUTED,
+    anchor: str = "start",
+    weight: str = "normal",
+    opacity: float = 1.0,
+) -> str:
     return (
         f'<text x="{num(x)}" y="{num(y)}" font-size="{num(size)}" fill="{fill}" '
         f'text-anchor="{anchor}" font-weight="{weight}" opacity="{num(opacity)}">'
@@ -304,16 +322,31 @@ def text(x: float, y: float, content: str, size: float = 12, fill: str = MUTED,
     )
 
 
-def rect(x: float, y: float, w: float, h: float, fill: str, radius: float = 0,
-         opacity: float = 1.0) -> str:
+def rect(
+    x: float,
+    y: float,
+    w: float,
+    h: float,
+    fill: str,
+    radius: float = 0,
+    opacity: float = 1.0,
+) -> str:
     return (
         f'<rect x="{num(x)}" y="{num(y)}" width="{num(max(w, 0))}" height="{num(max(h, 0))}" '
         f'rx="{num(radius)}" fill="{fill}" opacity="{num(opacity)}"/>'
     )
 
 
-def line(x1: float, y1: float, x2: float, y2: float, stroke: str = MUTED,
-         width: float = 1, opacity: float = 1.0, dash: str = "") -> str:
+def line(
+    x1: float,
+    y1: float,
+    x2: float,
+    y2: float,
+    stroke: str = MUTED,
+    width: float = 1,
+    opacity: float = 1.0,
+    dash: str = "",
+) -> str:
     dash_attr = f' stroke-dasharray="{dash}"' if dash else ""
     return (
         f'<line x1="{num(x1)}" y1="{num(y1)}" x2="{num(x2)}" y2="{num(y2)}" stroke="{stroke}" '
@@ -328,8 +361,13 @@ def circle(cx: float, cy: float, r: float, fill: str, opacity: float = 1.0) -> s
     )
 
 
-def path(d: str, fill: str = "none", stroke: str = "none", width: float = 1,
-         opacity: float = 1.0) -> str:
+def path(
+    d: str,
+    fill: str = "none",
+    stroke: str = "none",
+    width: float = 1,
+    opacity: float = 1.0,
+) -> str:
     return (
         f'<path d="{d}" fill="{fill}" stroke="{stroke}" stroke-width="{num(width)}" '
         f'stroke-linejoin="round" stroke-linecap="round" opacity="{num(opacity)}"/>'
@@ -359,7 +397,9 @@ def nice_step(span: float, target_ticks: int = 5) -> float:
 
 
 def empty_chart(width: int, height: int, message: str = "no data yet") -> str:
-    return svg(width, height, text(width / 2, height / 2, message, size=11, anchor="middle"))
+    return svg(
+        width, height, text(width / 2, height / 2, message, size=11, anchor="middle")
+    )
 
 
 # --------------------------------------------------------------------------
@@ -402,14 +442,23 @@ def render_cumulative(stats: Stats, today: date) -> str:
         points.append((px(day), py(value)))
     points.append((px(end), py(total)))
 
-    trace = " ".join(f"{'M' if i == 0 else 'L'}{num(x)} {num(y)}" for i, (x, y) in enumerate(points))
+    trace = " ".join(
+        f"{'M' if i == 0 else 'L'}{num(x)} {num(y)}" for i, (x, y) in enumerate(points)
+    )
     area = f"{trace} L{num(px(end))} {num(py(0))} L{num(px(start))} {num(py(0))} Z"
     parts.append(path(area, fill=ACCENT, opacity=0.16))
     parts.append(path(trace, stroke=ACCENT, width=1.8))
     parts.append(circle(px(stats.cumulative[-1][0]), py(total), 3.2, ACCENT))
     parts.append(
-        text(px(end) - 2, py(total) - 9, f"{total} solved", size=10, fill=ACCENT,
-             anchor="end", weight="600")
+        text(
+            px(end) - 2,
+            py(total) - 9,
+            f"{total} solved",
+            size=10,
+            fill=ACCENT,
+            anchor="end",
+            weight="600",
+        )
     )
 
     parts.append(line(left, py(0), width - right, py(0), MUTED, 1, 0.55))
@@ -417,7 +466,9 @@ def render_cumulative(stats: Stats, today: date) -> str:
     for i in range(ticks):
         day = start + timedelta(days=round(span_days * i / (ticks - 1)))
         anchor = "start" if i == 0 else "end" if i == ticks - 1 else "middle"
-        parts.append(text(px(day), height - 10, day.strftime("%b %Y"), size=9, anchor=anchor))
+        parts.append(
+            text(px(day), height - 10, day.strftime("%b %Y"), size=9, anchor=anchor)
+        )
 
     return svg(width, height, "\n".join(parts))
 
@@ -465,7 +516,13 @@ def render_monthly(stats: Stats) -> str:
             parts.append(rect(x, y, bar_w, bar_h, DIFF_COLOR[difficulty], radius=1.5))
         if i in labelled:
             parts.append(
-                text(x + bar_w / 2, height - 10, month.strftime("%b %y"), size=9, anchor="middle")
+                text(
+                    x + bar_w / 2,
+                    height - 10,
+                    month.strftime("%b %y"),
+                    size=9,
+                    anchor="middle",
+                )
             )
 
     parts.append(line(left, top + plot_h, width - right, top + plot_h, MUTED, 1, 0.55))
@@ -511,7 +568,9 @@ def render_difficulty(stats: Stats) -> str:
             )
         angle = end
 
-    parts.append(text(cx, cy + 2, total, size=26, fill=ACCENT, anchor="middle", weight="700"))
+    parts.append(
+        text(cx, cy + 2, total, size=26, fill=ACCENT, anchor="middle", weight="700")
+    )
     parts.append(text(cx, cy + 19, "solved", size=10, anchor="middle"))
 
     swatch_x, bar_x = 210, 226
@@ -521,10 +580,25 @@ def render_difficulty(stats: Stats) -> str:
         count = stats.by_difficulty.get(difficulty, 0)
         share = count / total * 100
         parts.append(rect(swatch_x, y - 9, 10, 10, DIFF_COLOR[difficulty], radius=2.5))
-        parts.append(text(bar_x, y, difficulty, size=12, fill=DIFF_COLOR[difficulty], weight="600"))
-        parts.append(text(width - 14, y, f"{count} · {share:.0f}%", size=11, anchor="end"))
+        parts.append(
+            text(
+                bar_x, y, difficulty, size=12, fill=DIFF_COLOR[difficulty], weight="600"
+            )
+        )
+        parts.append(
+            text(width - 14, y, f"{count} · {share:.0f}%", size=11, anchor="end")
+        )
         parts.append(rect(bar_x, y + 7, bar_w, 5, MUTED, radius=2.5, opacity=0.22))
-        parts.append(rect(bar_x, y + 7, bar_w * count / total, 5, DIFF_COLOR[difficulty], radius=2.5))
+        parts.append(
+            rect(
+                bar_x,
+                y + 7,
+                bar_w * count / total,
+                5,
+                DIFF_COLOR[difficulty],
+                radius=2.5,
+            )
+        )
         y += 46
 
     return svg(width, height, "\n".join(parts))
@@ -555,14 +629,18 @@ def render_beats(stats: Stats) -> str:
     mid_x, mid_y = left + plot_w / 2, top + plot_h / 2
     parts.append(line(mid_x, top, mid_x, top + plot_h, MUTED, 1, 0.4, dash="4 4"))
     parts.append(line(left, mid_y, left + plot_w, mid_y, MUTED, 1, 0.4, dash="4 4"))
-    parts.append(text(mid_x + 6, mid_y - 6, "fast + lean →", size=9, fill=ACCENT, opacity=0.8))
+    parts.append(
+        text(mid_x + 6, mid_y - 6, "fast + lean →", size=9, fill=ACCENT, opacity=0.8)
+    )
 
     for runtime_beats, memory_beats, difficulty in points:
         x = left + runtime_beats / 100 * plot_w
         y = top + plot_h - memory_beats / 100 * plot_h
         parts.append(circle(x, y, 4.5, DIFF_COLOR[difficulty], opacity=0.7))
 
-    parts.append(text(left + plot_w / 2, height - 8, "runtime beats %", size=9, anchor="middle"))
+    parts.append(
+        text(left + plot_w / 2, height - 8, "runtime beats %", size=9, anchor="middle")
+    )
     parts.append(
         f'<g transform="translate(10 {num(top + plot_h / 2)}) rotate(-90)">'
         f"{text(0, 0, 'memory beats %', size=9, anchor='middle')}</g>"
@@ -603,14 +681,26 @@ def render_heatmap(stats: Stats, today: date) -> str:
                 seen_months.add(day.month)
                 parts.append(text(x, top - 6, day.strftime("%b"), size=8))
 
-    total = sum(counts.get(start + timedelta(days=i), 0) for i in range((today - start).days + 1))
+    total = sum(
+        counts.get(start + timedelta(days=i), 0)
+        for i in range((today - start).days + 1)
+    )
     parts.append(text(left, height - 8, f"{total} in the last year", size=9))
     legend_x = width - right - 5 * slot - 30
     parts.append(text(legend_x - 5, height - 8, "less", size=8, anchor="end"))
     for i, opacity in enumerate([0.14] + ramp[1:]):
         color = MUTED if i == 0 else ACCENT
-        parts.append(rect(legend_x + i * slot, height - 16, cell, cell, color,
-                          radius=1.5, opacity=opacity))
+        parts.append(
+            rect(
+                legend_x + i * slot,
+                height - 16,
+                cell,
+                cell,
+                color,
+                radius=1.5,
+                opacity=opacity,
+            )
+        )
     parts.append(text(legend_x + 4 * slot + cell + 5, height - 8, "more", size=8))
     return svg(width, height, "\n".join(parts))
 
@@ -631,11 +721,21 @@ def render_languages(stats: Stats) -> str:
     parts = []
     for i, (language, count) in enumerate(entries):
         y = top + i * row_h
-        parts.append(text(label_w - 8, y + 12, language, size=11, anchor="end", weight="600"))
-        parts.append(rect(label_w, y + 2, bar_w, 13, MUTED, radius=6.5, opacity=0.16))
-        parts.append(rect(label_w, y + 2, bar_w * count / biggest, 13, ACCENT, radius=6.5))
         parts.append(
-            text(width - 10, y + 12, f"{count} ({count / total * 100:.0f}%)", size=10, anchor="end")
+            text(label_w - 8, y + 12, language, size=11, anchor="end", weight="600")
+        )
+        parts.append(rect(label_w, y + 2, bar_w, 13, MUTED, radius=6.5, opacity=0.16))
+        parts.append(
+            rect(label_w, y + 2, bar_w * count / biggest, 13, ACCENT, radius=6.5)
+        )
+        parts.append(
+            text(
+                width - 10,
+                y + 12,
+                f"{count} ({count / total * 100:.0f}%)",
+                size=10,
+                anchor="end",
+            )
         )
     return svg(width, height, "\n".join(parts))
 
@@ -666,7 +766,9 @@ def render_readme(stats: Stats, assets: str, today: date) -> str:
     add("# 🧩 LeetCode Journey")
     add("")
     add("My solved LeetCode problems, one directory per question.")
-    add("This page is generated from every `info.md` by [`generate_readme.py`](generate_readme.py).")
+    add(
+        "This page is generated from every `info.md` by [`generate_readme.py`](generate_readme.py)."
+    )
     add("")
     add(
         " ".join(
@@ -689,7 +791,9 @@ def render_readme(stats: Stats, assets: str, today: date) -> str:
         count = stats.by_difficulty.get(difficulty, 0)
         share = count / total * 100 if total else 0
         add(f"| **{difficulty}** | `{bar(count, total)}` {count} ({share:.0f}%) |")
-    languages = ", ".join(f"{lang} ({count})" for lang, count in stats.by_language.most_common())
+    languages = ", ".join(
+        f"{lang} ({count})" for lang, count in stats.by_language.most_common()
+    )
     add(f"| **Languages** | {languages or '—'} |")
     if stats.avg_runtime_beats is not None:
         add(f"| **Avg. runtime beats** | {stats.avg_runtime_beats:.1f}% |")
@@ -699,7 +803,11 @@ def render_readme(stats: Stats, assets: str, today: date) -> str:
         add(f"| **First solve** | {stats.first_solve:%b %d, %Y} |")
     if stats.last_solve:
         days_ago = (today - stats.last_solve).days
-        suffix = "today" if days_ago == 0 else "yesterday" if days_ago == 1 else f"{days_ago} days ago"
+        suffix = (
+            "today"
+            if days_ago == 0
+            else "yesterday" if days_ago == 1 else f"{days_ago} days ago"
+        )
         add(f"| **Latest solve** | {stats.last_solve:%b %d, %Y} ({suffix}) |")
     add(f"| **Longest streak** | {stats.longest_streak} day(s) |")
     add(f"| **Current streak** | {stats.current_streak} day(s) |")
@@ -710,22 +818,16 @@ def render_readme(stats: Stats, assets: str, today: date) -> str:
 
     grid = [
         [
-            ("📈 Solved over time", "cumulative.svg", "Cumulative problems solved",
-             "Every step up is a new problem; the flat stretches are the breaks."),
-            ("🗓️ Monthly output", "monthly.svg", "Problems per month by difficulty",
-             "How much I solved each month, split by difficulty."),
+            ("📈 Solved over time", "cumulative.svg", "Cumulative problems solved"),
+            ("🗓️ Monthly output", "monthly.svg", "Problems per month by difficulty"),
         ],
         [
-            ("🎯 Difficulty mix", "difficulty.svg", "Difficulty breakdown",
-             "The balance of Easy / Medium / Hard across everything solved."),
-            ("⚡ Solution quality", "beats.svg", "Runtime beats vs memory beats",
-             "One dot per submission — the top-right corner is fast <i>and</i> memory-lean."),
+            ("🎯 Difficulty mix", "difficulty.svg", "Difficulty breakdown"),
+            ("⚡ Solution quality", "beats.svg", "Runtime beats vs memory beats"),
         ],
         [
-            ("🔥 Activity", "heatmap.svg", "Solve activity over the last year",
-             "The last 53 weeks of solving, GitHub-contributions style."),
-            ("💻 Languages", "languages.svg", "Solutions per language",
-             "Which languages the accepted submissions were written in."),
+            ("🔥 Activity", "heatmap.svg", "Solve activity over the last year"),
+            ("💻 Languages", "languages.svg", "Solutions per language"),
         ],
     ]
     add("## 📉 The journey in six charts")
@@ -733,11 +835,10 @@ def render_readme(stats: Stats, assets: str, today: date) -> str:
     add("<table>")
     for row in grid:
         add("<tr>")
-        for heading, filename, alt, caption in row:
+        for heading, filename, alt in row:
             add('<td width="50%" valign="top">')
             add(f"<b>{heading}</b><br>")
             add(f'<img src="{assets}/{filename}" alt="{alt}" width="{GRID_W}"><br>')
-            add(f"<sub>{caption}</sub>")
             add("</td>")
         add("</tr>")
     add("</table>")
@@ -751,11 +852,21 @@ def render_readme(stats: Stats, assets: str, today: date) -> str:
     if recent:
         add("## 🕒 Recently solved")
         add("")
-        add("| Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats |")
+        add(
+            "| Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats |"
+        )
         add("|:--|--:|:--|:--|:--|--:|--:|")
         for solution, problem in recent:
-            runtime = f"{solution.runtime_beats:.2f}%" if solution.runtime_beats is not None else "—"
-            memory = f"{solution.memory_beats:.2f}%" if solution.memory_beats is not None else "—"
+            runtime = (
+                f"{solution.runtime_beats:.2f}%"
+                if solution.runtime_beats is not None
+                else "—"
+            )
+            memory = (
+                f"{solution.memory_beats:.2f}%"
+                if solution.memory_beats is not None
+                else "—"
+            )
             add(
                 f"| {solution.solved_on:%Y-%m-%d} | {problem.number} "
                 f"| [{problem.title}]({problem.url}) | {problem.difficulty} "
@@ -777,9 +888,15 @@ def render_readme(stats: Stats, assets: str, today: date) -> str:
 def main(argv: list[str] | None = None) -> int:
     default_root = Path(__file__).resolve().parent
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--root", type=Path, default=default_root, help="repository root")
-    parser.add_argument("--output", default="README.md", help="README path, relative to root")
-    parser.add_argument("--assets-dir", default="assets", help="chart directory, relative to root")
+    parser.add_argument(
+        "--root", type=Path, default=default_root, help="repository root"
+    )
+    parser.add_argument(
+        "--output", default="README.md", help="README path, relative to root"
+    )
+    parser.add_argument(
+        "--assets-dir", default="assets", help="chart directory, relative to root"
+    )
     parser.add_argument("--quiet", action="store_true", help="only print warnings")
     args = parser.parse_args(argv)
 
@@ -808,7 +925,9 @@ def main(argv: list[str] | None = None) -> int:
         (assets_dir / filename).write_text(content, encoding="utf-8")
 
     readme_path = root / args.output
-    readme_path.write_text(render_readme(stats, args.assets_dir, today), encoding="utf-8")
+    readme_path.write_text(
+        render_readme(stats, args.assets_dir, today), encoding="utf-8"
+    )
 
     if not args.quiet:
         print(
