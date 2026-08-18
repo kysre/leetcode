@@ -3,20 +3,20 @@
 My solved LeetCode problems, one directory per question.
 This page is generated from every `info.md` by [`generate_readme.py`](generate_readme.py).
 
-![Solved: 22](https://img.shields.io/badge/Solved-22-4c8eda) ![Easy: 10](https://img.shields.io/badge/Easy-10-00b8a3) ![Medium: 12](https://img.shields.io/badge/Medium-12-ffb800) ![Hard: 0](https://img.shields.io/badge/Hard-0-ff375f)
+![Solved: 23](https://img.shields.io/badge/Solved-23-4c8eda) ![Easy: 10](https://img.shields.io/badge/Easy-10-00b8a3) ![Medium: 13](https://img.shields.io/badge/Medium-13-ffb800) ![Hard: 0](https://img.shields.io/badge/Hard-0-ff375f)
 
 ## 📊 At a glance
 
 | | |
 |:--|:--|
-| **Problems solved** | 22 |
-| **Submissions recorded** | 22 |
-| **Easy** | `█████████░░░░░░░░░░░` 10 (45%) |
-| **Medium** | `███████████░░░░░░░░░` 12 (55%) |
+| **Problems solved** | 23 |
+| **Submissions recorded** | 23 |
+| **Easy** | `█████████░░░░░░░░░░░` 10 (43%) |
+| **Medium** | `███████████░░░░░░░░░` 13 (57%) |
 | **Hard** | `░░░░░░░░░░░░░░░░░░░░` 0 (0%) |
-| **Languages** | Python (21), C++ (1) |
-| **Avg. runtime beats** | 42.7% |
-| **Avg. memory beats** | 72.3% |
+| **Languages** | Python (22), C++ (1) |
+| **Avg. runtime beats** | 41.0% |
+| **Avg. memory beats** | 69.4% |
 | **First solve** | Jun 08, 2022 |
 | **Latest solve** | Aug 18, 2026 (today) |
 | **Longest streak** | 4 day(s) |
@@ -63,6 +63,7 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 | Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats |
 |:--|--:|:--|:--|:--|--:|--:|
 | 2026-08-18 | 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | Medium | Python | 97.47% | 81.79% |
+| 2026-08-18 | 15 | [3Sum](https://leetcode.com/problems/3sum/description/) | Medium | Python | 5.01% | 5.35% |
 | 2026-08-17 | 72 | [Edit Distance](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) | Medium | Python | 27.83% | 6.83% |
 | 2026-08-16 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/description/) | Medium | Python | 71.68% | 71.68% |
 | 2026-08-16 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/description/) | Medium | Python | 100.00% | 10.35% |
@@ -71,7 +72,6 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 | 2026-07-08 | 530 | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/) | Easy | Python | 100.00% | 67.13% |
 | 2026-07-07 | 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/) | Medium | Python | 52.83% | 7.12% |
 | 2026-06-29 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | Python | 44.13% | 42.42% |
-| 2025-10-18 | 714 | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) | Medium | Python | 98.75% | 100.00% |
 
 ---
 
