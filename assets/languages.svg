@@ -2,9 +2,9 @@
 <text x="54" y="28" font-size="11" fill="#8b949e" text-anchor="end" font-weight="600" opacity="1">Python</text>
 <rect x="62" y="18" width="320" height="13" rx="6.5" fill="#8b949e" opacity="0.16"/>
 <rect x="62" y="18" width="320" height="13" rx="6.5" fill="#4c8eda" opacity="1"/>
-<text x="430" y="28" font-size="10" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">24 (96%)</text>
+<text x="430" y="28" font-size="10" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">25 (96%)</text>
 <text x="54" y="58" font-size="11" fill="#8b949e" text-anchor="end" font-weight="600" opacity="1">C++</text>
 <rect x="62" y="48" width="320" height="13" rx="6.5" fill="#8b949e" opacity="0.16"/>
-<rect x="62" y="48" width="13.33" height="13" rx="6.5" fill="#4c8eda" opacity="1"/>
+<rect x="62" y="48" width="12.8" height="13" rx="6.5" fill="#4c8eda" opacity="1"/>
 <text x="430" y="58" font-size="10" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">1 (4%)</text>
 </svg>

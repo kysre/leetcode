@@ -3,20 +3,20 @@
 My solved LeetCode problems, one directory per question.
 This page is generated from every `info.md` by [`generate_readme.py`](generate_readme.py).
 
-![Solved: 25](https://img.shields.io/badge/Solved-25-4c8eda) ![Easy: 11](https://img.shields.io/badge/Easy-11-00b8a3) ![Medium: 14](https://img.shields.io/badge/Medium-14-ffb800) ![Hard: 0](https://img.shields.io/badge/Hard-0-ff375f)
+![Solved: 26](https://img.shields.io/badge/Solved-26-4c8eda) ![Easy: 11](https://img.shields.io/badge/Easy-11-00b8a3) ![Medium: 15](https://img.shields.io/badge/Medium-15-ffb800) ![Hard: 0](https://img.shields.io/badge/Hard-0-ff375f)
 
 ## 📊 At a glance
 
 | | |
 |:--|:--|
-| **Problems solved** | 25 |
-| **Submissions recorded** | 25 |
-| **Easy** | `█████████░░░░░░░░░░░` 11 (44%) |
-| **Medium** | `███████████░░░░░░░░░` 14 (56%) |
+| **Problems solved** | 26 |
+| **Submissions recorded** | 26 |
+| **Easy** | `████████░░░░░░░░░░░░` 11 (42%) |
+| **Medium** | `████████████░░░░░░░░` 15 (58%) |
 | **Hard** | `░░░░░░░░░░░░░░░░░░░░` 0 (0%) |
-| **Languages** | Python (24), C++ (1) |
-| **Avg. runtime beats** | 42.7% |
-| **Avg. memory beats** | 68.0% |
+| **Languages** | Python (25), C++ (1) |
+| **Avg. runtime beats** | 44.9% |
+| **Avg. memory beats** | 67.0% |
 | **First solve** | Jun 08, 2022 |
 | **Latest solve** | Aug 20, 2026 (today) |
 | **Longest streak** | 5 day(s) |
@@ -63,6 +63,7 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 | Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats |
 |:--|--:|:--|:--|:--|--:|--:|
 | 2026-08-20 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | Easy | Python | 84.43% | 10.04% |
+| 2026-08-20 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | Medium | Python | 100.00% | 41.17% |
 | 2026-08-19 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/description/) | Medium | Python | 39.79% | 94.60% |
 | 2026-08-18 | 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | Medium | Python | 97.47% | 81.79% |
 | 2026-08-18 | 15 | [3Sum](https://leetcode.com/problems/3sum/description/) | Medium | Python | 5.01% | 5.35% |
@@ -71,7 +72,6 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 | 2026-08-16 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/description/) | Medium | Python | 100.00% | 10.35% |
 | 2026-07-15 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Python | 55.13% | 72.94% |
 | 2026-07-15 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | Medium | Python | 100.00% | 94.76% |
-| 2026-07-08 | 530 | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/) | Easy | Python | 100.00% | 67.13% |
 
 ---
 
