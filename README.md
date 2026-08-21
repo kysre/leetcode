@@ -3,24 +3,24 @@
 My solved LeetCode problems, one directory per question.
 This page is generated from every `info.md` by [`generate_readme.py`](generate_readme.py).
 
-![Solved: 26](https://img.shields.io/badge/Solved-26-4c8eda) ![Easy: 11](https://img.shields.io/badge/Easy-11-00b8a3) ![Medium: 15](https://img.shields.io/badge/Medium-15-ffb800) ![Hard: 0](https://img.shields.io/badge/Hard-0-ff375f)
+![Solved: 27](https://img.shields.io/badge/Solved-27-4c8eda) ![Easy: 11](https://img.shields.io/badge/Easy-11-00b8a3) ![Medium: 16](https://img.shields.io/badge/Medium-16-ffb800) ![Hard: 0](https://img.shields.io/badge/Hard-0-ff375f)
 
 ## 📊 At a glance
 
 | | |
 |:--|:--|
-| **Problems solved** | 26 |
-| **Submissions recorded** | 26 |
-| **Easy** | `████████░░░░░░░░░░░░` 11 (42%) |
-| **Medium** | `████████████░░░░░░░░` 15 (58%) |
+| **Problems solved** | 27 |
+| **Submissions recorded** | 27 |
+| **Easy** | `████████░░░░░░░░░░░░` 11 (41%) |
+| **Medium** | `████████████░░░░░░░░` 16 (59%) |
 | **Hard** | `░░░░░░░░░░░░░░░░░░░░` 0 (0%) |
-| **Languages** | Python (25), C++ (1) |
-| **Avg. runtime beats** | 44.9% |
-| **Avg. memory beats** | 67.0% |
+| **Languages** | Python (26), C++ (1) |
+| **Avg. runtime beats** | 47.0% |
+| **Avg. memory beats** | 68.1% |
 | **First solve** | Jun 08, 2022 |
-| **Latest solve** | Aug 20, 2026 (yesterday) |
-| **Longest streak** | 5 day(s) |
-| **Current streak** | 5 day(s) |
+| **Latest solve** | Aug 21, 2026 (today) |
+| **Longest streak** | 6 day(s) |
+| **Current streak** | 6 day(s) |
 | **Busiest day** | Oct 08, 2023 — 3 problem(s) |
 
 ## 📉 The journey in six charts
@@ -62,6 +62,7 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 
 | Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats | Code |
 |:--|--:|:--|:--|:--|--:|--:|:-:|
+| 2026-08-21 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | Medium | Python | 100.00% | 98.25% | [📄](0063_unique-paths-ii/solution.py) |
 | 2026-08-20 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | Easy | Python | 84.43% | 10.04% | [📄](0190_reverse-bits/solution.py) |
 | 2026-08-20 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | Medium | Python | 100.00% | 41.17% | [📄](0114_flatten-binary-tree-to-linked-list/solution.py) |
 | 2026-08-19 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/description/) | Medium | Python | 39.79% | 94.60% | [📄](0322_coin-change/solution.py) |
@@ -71,7 +72,6 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 | 2026-08-16 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/description/) | Medium | Python | 71.68% | 71.68% | [📄](0072_edit-distance/solution.py) |
 | 2026-08-16 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/description/) | Medium | Python | 100.00% | 10.35% | [📄](0061_rotate-list/solution.py) |
 | 2026-07-15 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Python | 55.13% | 72.94% | [📄](0150_evaluate-reverse-polish-notation/solution.py) |
-| 2026-07-15 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | Medium | Python | 100.00% | 94.76% | [📄](0036_valid-sudoku/solution.py) |
 
 ---
 
