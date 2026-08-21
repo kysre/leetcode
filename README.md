@@ -60,18 +60,18 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 
 ## 🕒 Recently solved
 
-| Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats |
-|:--|--:|:--|:--|:--|--:|--:|
-| 2026-08-20 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | Easy | Python | 84.43% | 10.04% |
-| 2026-08-20 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | Medium | Python | 100.00% | 41.17% |
-| 2026-08-19 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/description/) | Medium | Python | 39.79% | 94.60% |
-| 2026-08-18 | 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | Medium | Python | 97.47% | 81.79% |
-| 2026-08-18 | 15 | [3Sum](https://leetcode.com/problems/3sum/description/) | Medium | Python | 5.01% | 5.35% |
-| 2026-08-17 | 72 | [Edit Distance](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) | Medium | Python | 27.83% | 6.83% |
-| 2026-08-16 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/description/) | Medium | Python | 71.68% | 71.68% |
-| 2026-08-16 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/description/) | Medium | Python | 100.00% | 10.35% |
-| 2026-07-15 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Python | 55.13% | 72.94% |
-| 2026-07-15 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | Medium | Python | 100.00% | 94.76% |
+| Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats | Code |
+|:--|--:|:--|:--|:--|--:|--:|:-:|
+| 2026-08-20 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | Easy | Python | 84.43% | 10.04% | [📄](0190_reverse-bits/solution.py) |
+| 2026-08-20 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | Medium | Python | 100.00% | 41.17% | [📄](0114_flatten-binary-tree-to-linked-list/solution.py) |
+| 2026-08-19 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/description/) | Medium | Python | 39.79% | 94.60% | [📄](0322_coin-change/solution.py) |
+| 2026-08-18 | 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | Medium | Python | 97.47% | 81.79% | [📄](0080_remove-duplicates-from-sorted-array-ii/solution.py) |
+| 2026-08-18 | 15 | [3Sum](https://leetcode.com/problems/3sum/description/) | Medium | Python | 5.01% | 5.35% | [📄](0015_3sum/solution.py) |
+| 2026-08-17 | 72 | [Edit Distance](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) | Medium | Python | 27.83% | 6.83% | [📄](0106_construct-binary-tree-from-inorder-and-postorder-traversal/solution.py) |
+| 2026-08-16 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/description/) | Medium | Python | 71.68% | 71.68% | [📄](0072_edit-distance/solution.py) |
+| 2026-08-16 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/description/) | Medium | Python | 100.00% | 10.35% | [📄](0061_rotate-list/solution.py) |
+| 2026-07-15 | 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Python | 55.13% | 72.94% | [📄](0150_evaluate-reverse-polish-notation/solution.py) |
+| 2026-07-15 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | Medium | Python | 100.00% | 94.76% | [📄](0036_valid-sudoku/solution.py) |
 
 ---
 

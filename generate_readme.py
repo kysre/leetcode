@@ -43,6 +43,7 @@ MUTED = "#8b949e"
 
 DIFFICULTIES = ("Easy", "Medium", "Hard")
 DIFF_COLOR = {"Easy": EASY, "Medium": MEDIUM, "Hard": HARD}
+LANG_EXT = {"python": ".py", "python3": ".py", "c++": ".cpp", "cpp": ".cpp"}
 FONT = "system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif"
 
 # charts sit two-per-row in the README grid, so they are drawn at roughly the
@@ -79,6 +80,8 @@ class Problem:
     acceptance_rate: float | None
     url: str
     solutions: list[Solution] = field(default_factory=list)
+    # repo-relative paths of the solution.* files found on disk
+    solution_files: list[str] = field(default_factory=list)
 
     @property
     def solved_on(self) -> date | None:
@@ -178,8 +181,21 @@ def parse_info_md(directory: Path) -> tuple[Problem | None, str | None]:
     if not solutions:
         return None, "solutions table has no data row"
 
+    solution_files = sorted(
+        f"{directory.name}/{path.name}"
+        for path in directory.glob("solution.*")
+        if path.is_file()
+    )
+
     problem = Problem(
-        number, title, directory.name, difficulty, acceptance_rate, url, solutions
+        number,
+        title,
+        directory.name,
+        difficulty,
+        acceptance_rate,
+        url,
+        solutions,
+        solution_files,
     )
     warning = None if problem.solved_on else "no valid solution date"
     return problem, warning
@@ -818,6 +834,18 @@ def badge(label: str, message: str, color: str) -> str:
     return f"![{label}: {message}]({url})"
 
 
+def solution_file(problem: Problem, solution: Solution) -> str | None:
+    """The file a submission row links to -- by language, else the only one there is."""
+    extension = LANG_EXT.get(solution.language.strip().lower())
+    if extension:
+        for path in problem.solution_files:
+            if path.endswith(extension):
+                return path
+    if len(problem.solution_files) == 1:
+        return problem.solution_files[0]
+    return None
+
+
 def render_readme(stats: Stats, assets: str, today: date) -> str:
     total = len(stats.problems)
     lines: list[str] = []
@@ -922,9 +950,10 @@ def render_readme(stats: Stats, assets: str, today: date) -> str:
         add("## 🕒 Recently solved")
         add("")
         add(
-            "| Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats |"
+            "| Date | # | Problem | Difficulty | Language "
+            "| Runtime beats | Memory beats | Code |"
         )
-        add("|:--|--:|:--|:--|:--|--:|--:|")
+        add("|:--|--:|:--|:--|:--|--:|--:|:-:|")
         for solution, problem in recent:
             runtime = (
                 f"{solution.runtime_beats:.2f}%"
@@ -936,10 +965,12 @@ def render_readme(stats: Stats, assets: str, today: date) -> str:
                 if solution.memory_beats is not None
                 else "—"
             )
+            path = solution_file(problem, solution)
+            code = f"[📄]({path})" if path else "—"
             add(
                 f"| {solution.solved_on:%Y-%m-%d} | {problem.number} "
                 f"| [{problem.title}]({problem.url}) | {problem.difficulty} "
-                f"| {solution.language} | {runtime} | {memory} |"
+                f"| {solution.language} | {runtime} | {memory} | {code} |"
             )
         add("")
 
