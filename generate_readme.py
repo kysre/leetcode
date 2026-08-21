@@ -22,6 +22,16 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 # --------------------------------------------------------------------------
+# configuration
+# --------------------------------------------------------------------------
+
+# The "Solved over time" and "Monthly output" charts start here; the early years
+# are sparse enough that charting them all squashes the recent pace into the
+# right edge. Set to None to chart the full history. Everything else -- badges,
+# the at-a-glance table, the other four charts -- always covers all time.
+CHART_START: date | None = date(2026, 6, 1)
+
+# --------------------------------------------------------------------------
 # palette -- readable on both the light and the dark GitHub themes
 # --------------------------------------------------------------------------
 
@@ -396,6 +406,30 @@ def nice_step(span: float, target_ticks: int = 5) -> float:
     return 10 * magnitude
 
 
+def month_ticks(start: date, end: date, max_labels: int) -> list[date]:
+    """Month boundaries within [start, end], thinned to at most max_labels."""
+    cursor = start if start.day == 1 else next_month(start)
+    months = []
+    while cursor <= end:
+        months.append(cursor)
+        cursor = next_month(cursor)
+    if len(months) < 2:
+        return months
+    for step in (1, 2, 3, 6, 12, 24, 60):
+        if math.ceil(len(months) / step) <= max_labels:
+            break
+    return months[::step]
+
+
+def tick_labels(days: list[date]) -> list[str]:
+    """Name the year on the first tick, then only when it changes."""
+    labels, previous = [], None
+    for day in days:
+        labels.append(day.strftime("%b" if day.year == previous else "%b %Y"))
+        previous = day.year
+    return labels
+
+
 def empty_chart(width: int, height: int, message: str = "no data yet") -> str:
     return svg(
         width, height, text(width / 2, height / 2, message, size=11, anchor="middle")
@@ -410,14 +444,20 @@ def empty_chart(width: int, height: int, message: str = "no data yet") -> str:
 def render_cumulative(stats: Stats, today: date) -> str:
     width, height = GRID_W, 260
     left, right, top, bottom = 30, 12, 20, 28
-    if not stats.cumulative:
+    if CHART_START:
+        # running totals are kept, so the line picks up where the window opens
+        baseline = max((v for d, v in stats.cumulative if d < CHART_START), default=0)
+        series = [(d, v) for d, v in stats.cumulative if d >= CHART_START]
+    else:
+        baseline, series = 0, stats.cumulative
+    if not series:
         return empty_chart(width, height)
 
     plot_w, plot_h = width - left - right, height - top - bottom
-    start = stats.cumulative[0][0]
-    end = max(stats.cumulative[-1][0], today)
+    start = CHART_START or series[0][0]
+    end = max(series[-1][0], today)
     span_days = max((end - start).days, 1)
-    total = stats.cumulative[-1][1]
+    total = series[-1][1]
     step = nice_step(total, 4)
     y_max = max(math.ceil(total / step) * step, step)
 
@@ -436,8 +476,8 @@ def render_cumulative(stats: Stats, today: date) -> str:
         tick += step
 
     # step line: hold the previous total until the next solve lands
-    points: list[tuple[float, float]] = [(px(start), py(0))]
-    for day, value in stats.cumulative:
+    points: list[tuple[float, float]] = [(px(start), py(baseline))]
+    for day, value in series:
         points.append((px(day), py(value - 1)))
         points.append((px(day), py(value)))
     points.append((px(end), py(total)))
@@ -448,7 +488,7 @@ def render_cumulative(stats: Stats, today: date) -> str:
     area = f"{trace} L{num(px(end))} {num(py(0))} L{num(px(start))} {num(py(0))} Z"
     parts.append(path(area, fill=ACCENT, opacity=0.16))
     parts.append(path(trace, stroke=ACCENT, width=1.8))
-    parts.append(circle(px(stats.cumulative[-1][0]), py(total), 3.2, ACCENT))
+    parts.append(circle(px(series[-1][0]), py(total), 3.2, ACCENT))
     parts.append(
         text(
             px(end) - 2,
@@ -460,15 +500,31 @@ def render_cumulative(stats: Stats, today: date) -> str:
             weight="600",
         )
     )
+    if baseline:
+        parts.append(
+            text(px(start) + 4, py(baseline) - 6, f"{baseline} before", size=9)
+        )
 
     parts.append(line(left, py(0), width - right, py(0), MUTED, 1, 0.55))
-    ticks = min(4, max(2, span_days // 120 + 1))
-    for i in range(ticks):
-        day = start + timedelta(days=round(span_days * i / (ticks - 1)))
-        anchor = "start" if i == 0 else "end" if i == ticks - 1 else "middle"
-        parts.append(
-            text(px(day), height - 10, day.strftime("%b %Y"), size=9, anchor=anchor)
-        )
+    # budget on the long "Mmm YYYY" form -- the first label always carries a year
+    max_labels = max(2, int(plot_w // 58))
+    ticks = month_ticks(start, end, max_labels)
+    if len(ticks) < 2:
+        # window shorter than two month boundaries: fall back to day-level ticks
+        count = min(max_labels, max(2, span_days // 7 + 1))
+        ticks = [
+            start + timedelta(days=round(span_days * i / (count - 1)))
+            for i in range(count)
+        ]
+        labels = [day.strftime("%b %d") for day in ticks]
+    else:
+        labels = tick_labels(ticks)
+
+    for day, label in zip(ticks, labels):
+        x = px(day)
+        near_left, near_right = x - left < 12, width - right - x < 12
+        anchor = "start" if near_left else "end" if near_right else "middle"
+        parts.append(text(x, height - 10, label, size=9, anchor=anchor))
 
     return svg(width, height, "\n".join(parts))
 
@@ -476,14 +532,18 @@ def render_cumulative(stats: Stats, today: date) -> str:
 def render_monthly(stats: Stats) -> str:
     width, height = GRID_W, 260
     left, right, top, bottom = 28, 12, 28, 28
-    if not stats.monthly:
+    months = stats.monthly
+    if CHART_START:
+        # bars are whole months, so a mid-month cutoff rounds out to its month
+        months = [(m, c) for m, c in months if m >= month_floor(CHART_START)]
+    if not months:
         return empty_chart(width, height)
 
     plot_w, plot_h = width - left - right, height - top - bottom
-    totals = [sum(counts.values()) for _, counts in stats.monthly]
+    totals = [sum(counts.values()) for _, counts in months]
     step = nice_step(max(totals), 4)
     y_max = max(math.ceil(max(totals) / step) * step, step)
-    slot = plot_w / len(stats.monthly)
+    slot = plot_w / len(months)
     bar_w = min(slot * 0.72, 20)
 
     parts = []
@@ -494,9 +554,9 @@ def render_monthly(stats: Stats) -> str:
         parts.append(text(left - 6, y + 3, int(tick), size=9, anchor="end"))
         tick += step
 
-    last = len(stats.monthly) - 1
-    label_every = math.ceil(len(stats.monthly) / 6)
-    labelled = set(range(0, len(stats.monthly), label_every))
+    last = len(months) - 1
+    label_every = math.ceil(len(months) / 6)
+    labelled = set(range(0, len(months), label_every))
     # always name the final month, but not on top of the previous label
     if last - max(labelled) >= label_every * 0.6:
         labelled.add(last)
@@ -504,7 +564,7 @@ def render_monthly(stats: Stats) -> str:
         labelled.discard(max(labelled))
         labelled.add(last)
 
-    for i, (month, counts) in enumerate(stats.monthly):
+    for i, (month, counts) in enumerate(months):
         x = left + slot * i + (slot - bar_w) / 2
         y = top + plot_h
         for difficulty in DIFFICULTIES:
@@ -816,10 +876,19 @@ def render_readme(stats: Stats, assets: str, today: date) -> str:
         add(f"| **Busiest day** | {day:%b %d, %Y} — {count} problem(s) |")
     add("")
 
+    window = f" (since {CHART_START:%b %Y})" if CHART_START else ""
     grid = [
         [
-            ("📈 Solved over time", "cumulative.svg", "Cumulative problems solved"),
-            ("🗓️ Monthly output", "monthly.svg", "Problems per month by difficulty"),
+            (
+                f"📈 Solved over time{window}",
+                "cumulative.svg",
+                "Cumulative problems solved",
+            ),
+            (
+                f"🗓️ Monthly output{window}",
+                "monthly.svg",
+                "Problems per month by difficulty",
+            ),
         ],
         [
             ("🎯 Difficulty mix", "difficulty.svg", "Difficulty breakdown"),
