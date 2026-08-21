@@ -1,4 +1,4 @@
-# 72. Edit Distance
+# 106. Construct Binary Tree from Inorder and Postorder Traversal
 
 | Difficulty | Accepted        |Acceptance Rate |
 |:----------:|:---------------:|:--------------:|
