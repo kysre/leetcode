@@ -10,8 +10,8 @@
 <rect x="218" y="211.6" width="20" height="20.4" rx="1.5" fill="#00b8a3" opacity="1"/>
 <rect x="218" y="150.4" width="20" height="61.2" rx="1.5" fill="#ffb800" opacity="1"/>
 <text x="228" y="250" font-size="9" fill="#8b949e" text-anchor="middle" font-weight="normal" opacity="1">Jul 26</text>
-<rect x="351.33" y="211.6" width="20" height="20.4" rx="1.5" fill="#00b8a3" opacity="1"/>
-<rect x="351.33" y="48.4" width="20" height="163.2" rx="1.5" fill="#ffb800" opacity="1"/>
+<rect x="351.33" y="191.2" width="20" height="40.8" rx="1.5" fill="#00b8a3" opacity="1"/>
+<rect x="351.33" y="28" width="20" height="163.2" rx="1.5" fill="#ffb800" opacity="1"/>
 <text x="361.33" y="250" font-size="9" fill="#8b949e" text-anchor="middle" font-weight="normal" opacity="1">Aug 26</text>
 <line x1="28" y1="232" x2="428" y2="232" stroke="#8b949e" stroke-width="1" opacity="0.55"/>
 <rect x="28" y="7.5" width="7.65" height="7.65" rx="1.5" fill="#00b8a3" opacity="1"/>
