@@ -1,19 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 260" width="440" height="260" role="img" font-family="system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
 <line x1="30" y1="232" x2="428" y2="232" stroke="#8b949e" stroke-width="1" opacity="0.2"/>
 <text x="24" y="235" font-size="9" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">0</text>
-<line x1="30" y1="161.33" x2="428" y2="161.33" stroke="#8b949e" stroke-width="1" opacity="0.2"/>
-<text x="24" y="164.33" font-size="9" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">10</text>
-<line x1="30" y1="90.67" x2="428" y2="90.67" stroke="#8b949e" stroke-width="1" opacity="0.2"/>
-<text x="24" y="93.67" font-size="9" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">20</text>
+<line x1="30" y1="179" x2="428" y2="179" stroke="#8b949e" stroke-width="1" opacity="0.2"/>
+<text x="24" y="182" font-size="9" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">10</text>
+<line x1="30" y1="126" x2="428" y2="126" stroke="#8b949e" stroke-width="1" opacity="0.2"/>
+<text x="24" y="129" font-size="9" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">20</text>
+<line x1="30" y1="73" x2="428" y2="73" stroke="#8b949e" stroke-width="1" opacity="0.2"/>
+<text x="24" y="76" font-size="9" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">30</text>
 <line x1="30" y1="20" x2="428" y2="20" stroke="#8b949e" stroke-width="1" opacity="0.2"/>
-<text x="24" y="23" font-size="9" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">30</text>
-<path d="M30 140.13 L162.67 140.13 L162.67 133.07 L200.57 133.07 L200.57 126 L205.31 126 L205.31 118.93 L238.48 118.93 L238.48 111.87 L238.48 111.87 L238.48 104.8 L390.1 104.8 L390.1 97.73 L390.1 97.73 L390.1 90.67 L394.83 90.67 L394.83 83.6 L399.57 83.6 L399.57 76.53 L399.57 76.53 L399.57 69.47 L404.31 69.47 L404.31 62.4 L409.05 62.4 L409.05 55.33 L409.05 55.33 L409.05 48.27 L413.79 48.27 L413.79 41.2 L418.52 41.2 L418.52 34.13 L423.26 34.13 L423.26 27.07 L428 27.07 L428 20 L428 20 L428 232 L30 232 Z" fill="#4c8eda" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" opacity="0.16"/>
-<path d="M30 140.13 L162.67 140.13 L162.67 133.07 L200.57 133.07 L200.57 126 L205.31 126 L205.31 118.93 L238.48 118.93 L238.48 111.87 L238.48 111.87 L238.48 104.8 L390.1 104.8 L390.1 97.73 L390.1 97.73 L390.1 90.67 L394.83 90.67 L394.83 83.6 L399.57 83.6 L399.57 76.53 L399.57 76.53 L399.57 69.47 L404.31 69.47 L404.31 62.4 L409.05 62.4 L409.05 55.33 L409.05 55.33 L409.05 48.27 L413.79 48.27 L413.79 41.2 L418.52 41.2 L418.52 34.13 L423.26 34.13 L423.26 27.07 L428 27.07 L428 20 L428 20" fill="none" stroke="#4c8eda" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" opacity="1"/>
-<circle cx="428" cy="20" r="3.2" fill="#4c8eda" opacity="1"/>
-<text x="426" y="11" font-size="10" fill="#4c8eda" text-anchor="end" font-weight="600" opacity="1">30 solved</text>
-<text x="34" y="134.13" font-size="9" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">13 before</text>
+<text x="24" y="23" font-size="9" fill="#8b949e" text-anchor="end" font-weight="normal" opacity="1">40</text>
+<path d="M30 163.1 L161.11 163.1 L161.11 157.8 L198.56 157.8 L198.56 152.5 L203.25 152.5 L203.25 147.2 L236.02 147.2 L236.02 141.9 L236.02 141.9 L236.02 136.6 L385.86 136.6 L385.86 131.3 L385.86 131.3 L385.86 126 L390.54 126 L390.54 120.7 L395.22 120.7 L395.22 115.4 L395.22 115.4 L395.22 110.1 L399.91 110.1 L399.91 104.8 L404.59 104.8 L404.59 99.5 L404.59 99.5 L404.59 94.2 L409.27 94.2 L409.27 88.9 L413.95 88.9 L413.95 83.6 L418.64 83.6 L418.64 78.3 L423.32 78.3 L423.32 73 L428 73 L428 67.7 L428 67.7 L428 232 L30 232 Z" fill="#4c8eda" stroke="none" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" opacity="0.16"/>
+<path d="M30 163.1 L161.11 163.1 L161.11 157.8 L198.56 157.8 L198.56 152.5 L203.25 152.5 L203.25 147.2 L236.02 147.2 L236.02 141.9 L236.02 141.9 L236.02 136.6 L385.86 136.6 L385.86 131.3 L385.86 131.3 L385.86 126 L390.54 126 L390.54 120.7 L395.22 120.7 L395.22 115.4 L395.22 115.4 L395.22 110.1 L399.91 110.1 L399.91 104.8 L404.59 104.8 L404.59 99.5 L404.59 99.5 L404.59 94.2 L409.27 94.2 L409.27 88.9 L413.95 88.9 L413.95 83.6 L418.64 83.6 L418.64 78.3 L423.32 78.3 L423.32 73 L428 73 L428 67.7 L428 67.7" fill="none" stroke="#4c8eda" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" opacity="1"/>
+<circle cx="428" cy="67.7" r="3.2" fill="#4c8eda" opacity="1"/>
+<text x="426" y="58.7" font-size="10" fill="#4c8eda" text-anchor="end" font-weight="600" opacity="1">31 solved</text>
+<text x="34" y="157.1" font-size="9" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">13 before</text>
 <line x1="30" y1="232" x2="428" y2="232" stroke="#8b949e" stroke-width="1" opacity="0.55"/>
 <text x="30" y="250" font-size="9" fill="#8b949e" text-anchor="start" font-weight="normal" opacity="1">Jun 2026</text>
-<text x="172.14" y="250" font-size="9" fill="#8b949e" text-anchor="middle" font-weight="normal" opacity="1">Jul</text>
-<text x="319.02" y="250" font-size="9" fill="#8b949e" text-anchor="middle" font-weight="normal" opacity="1">Aug</text>
+<text x="170.47" y="250" font-size="9" fill="#8b949e" text-anchor="middle" font-weight="normal" opacity="1">Jul</text>
+<text x="315.62" y="250" font-size="9" fill="#8b949e" text-anchor="middle" font-weight="normal" opacity="1">Aug</text>
 </svg>
