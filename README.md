@@ -3,24 +3,24 @@
 My solved LeetCode problems, one directory per question.
 This page is generated from every `info.md` by [`generate_readme.py`](generate_readme.py).
 
-![Solved: 35](https://img.shields.io/badge/Solved-35-4c8eda) ![Easy: 12](https://img.shields.io/badge/Easy-12-00b8a3) ![Medium: 23](https://img.shields.io/badge/Medium-23-ffb800) ![Hard: 0](https://img.shields.io/badge/Hard-0-ff375f)
+![Solved: 36](https://img.shields.io/badge/Solved-36-4c8eda) ![Easy: 12](https://img.shields.io/badge/Easy-12-00b8a3) ![Medium: 24](https://img.shields.io/badge/Medium-24-ffb800) ![Hard: 0](https://img.shields.io/badge/Hard-0-ff375f)
 
 ## 📊 At a glance
 
 | | |
 |:--|:--|
-| **Problems solved** | 35 |
-| **Submissions recorded** | 35 |
-| **Easy** | `███████░░░░░░░░░░░░░` 12 (34%) |
-| **Medium** | `█████████████░░░░░░░` 23 (66%) |
+| **Problems solved** | 36 |
+| **Submissions recorded** | 36 |
+| **Easy** | `███████░░░░░░░░░░░░░` 12 (33%) |
+| **Medium** | `█████████████░░░░░░░` 24 (67%) |
 | **Hard** | `░░░░░░░░░░░░░░░░░░░░` 0 (0%) |
-| **Languages** | Python (34), C++ (1) |
-| **Avg. runtime beats** | 48.7% |
-| **Avg. memory beats** | 61.6% |
+| **Languages** | Python (35), C++ (1) |
+| **Avg. runtime beats** | 50.1% |
+| **Avg. memory beats** | 61.9% |
 | **First solve** | Jun 08, 2022 |
-| **Latest solve** | Sep 08, 2026 (7 days ago) |
+| **Latest solve** | Sep 15, 2026 (today) |
 | **Longest streak** | 11 day(s) |
-| **Current streak** | 0 day(s) |
+| **Current streak** | 1 day(s) |
 | **Busiest day** | Oct 08, 2023 — 3 problem(s) |
 
 ## 📉 The journey in six charts
@@ -62,6 +62,7 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 
 | Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats | Code |
 |:--|--:|:--|:--|:--|--:|--:|:-:|
+| 2026-09-15 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/) | Medium | Python | 100.00% | 70.72% | [📄](0199_binary-tree-right-side-view/solution.py) |
 | 2026-09-08 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | Python | 5.01% | 19.69% | [📄](0215_kth-largest-element-in-an-array/solution.py) |
 | 2026-09-07 | 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/description/) | Medium | Python | 52.24% | 49.47% | [📄](0221_maximal-square/solution.py) |
 | 2026-09-05 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) | Medium | Python | 100.00% | 25.76% | [📄](0092_reverse-linked-list-ii/solution.py) |
@@ -71,7 +72,6 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 | 2026-08-23 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/description/) | Medium | Python | 100.00% | 5.73% | [📄](0048_rotate-image/solution.py) |
 | 2026-08-22 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Easy | Python | 100.00% | 39.06% | [📄](0104_maximum-depth-of-binary-tree/solution.py) |
 | 2026-08-21 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | Medium | Python | 100.00% | 98.25% | [📄](0063_unique-paths-ii/solution.py) |
-| 2026-08-20 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | Easy | Python | 84.43% | 10.04% | [📄](0190_reverse-bits/solution.py) |
 
 ---
 
