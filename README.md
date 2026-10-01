@@ -3,19 +3,19 @@
 My solved LeetCode problems, one directory per question.
 This page is generated from every `info.md` by [`generate_readme.py`](generate_readme.py).
 
-![Solved: 39](https://img.shields.io/badge/Solved-39-4c8eda) ![Easy: 13](https://img.shields.io/badge/Easy-13-00b8a3) ![Medium: 24](https://img.shields.io/badge/Medium-24-ffb800) ![Hard: 2](https://img.shields.io/badge/Hard-2-ff375f)
+![Solved: 40](https://img.shields.io/badge/Solved-40-4c8eda) ![Easy: 13](https://img.shields.io/badge/Easy-13-00b8a3) ![Medium: 25](https://img.shields.io/badge/Medium-25-ffb800) ![Hard: 2](https://img.shields.io/badge/Hard-2-ff375f)
 
 ## 📊 At a glance
 
 | | |
 |:--|:--|
-| **Problems solved** | 39 |
-| **Submissions recorded** | 39 |
-| **Easy** | `███████░░░░░░░░░░░░░` 13 (33%) |
-| **Medium** | `████████████░░░░░░░░` 24 (62%) |
+| **Problems solved** | 40 |
+| **Submissions recorded** | 40 |
+| **Easy** | `██████░░░░░░░░░░░░░░` 13 (32%) |
+| **Medium** | `████████████░░░░░░░░` 25 (62%) |
 | **Hard** | `█░░░░░░░░░░░░░░░░░░░` 2 (5%) |
-| **Languages** | Python (37), Java (1), C++ (1) |
-| **Avg. runtime beats** | 51.4% |
+| **Languages** | Python (37), Java (2), C++ (1) |
+| **Avg. runtime beats** | 52.6% |
 | **Avg. memory beats** | 60.3% |
 | **First solve** | Jun 08, 2022 |
 | **Latest solve** | Oct 01, 2026 (today) |
@@ -63,6 +63,7 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 | Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats | Code |
 |:--|--:|:--|:--|:--|--:|--:|:-:|
 | 2026-10-01 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) | Easy | Java | 5.98% | 57.83% | — |
+| 2026-10-01 | 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/) | Medium | Java | 99.87% | 60.64% | — |
 | 2026-09-21 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) | Hard | Python | 93.68% | 13.64% | [📄](0124_binary-tree-maximum-path-sum/solution.py) |
 | 2026-09-16 | 68 | [Text Justification](https://leetcode.com/problems/text-justification/description/) | Hard | Python | 100.00% | 52.63% | [📄](0068_text-justification/solution.py) |
 | 2026-09-15 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/) | Medium | Python | 100.00% | 70.72% | [📄](0199_binary-tree-right-side-view/solution.py) |
@@ -71,7 +72,6 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 | 2026-09-05 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) | Medium | Python | 100.00% | 25.76% | [📄](0092_reverse-linked-list-ii/solution.py) |
 | 2026-08-26 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/description/) | Medium | Python | 8.81% | 20.12% | [📄](0189_rotate-array/solution.py) |
 | 2026-08-25 | 97 | [Interleaving String](https://leetcode.com/problems/interleaving-string/description/) | Medium | Python | 64.63% | 72.37% | [📄](0097_interleaving-string/solution.py) |
-| 2026-08-24 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) | Medium | Python | 5.19% | 84.19% | [📄](0236_lowest-common-ancestor-of-a-binary-tree/solution.py) |
 
 ---
 
