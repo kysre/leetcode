@@ -43,7 +43,15 @@ MUTED = "#8b949e"
 
 DIFFICULTIES = ("Easy", "Medium", "Hard")
 DIFF_COLOR = {"Easy": EASY, "Medium": MEDIUM, "Hard": HARD}
-LANG_EXT = {"python": ".py", "python3": ".py", "c++": ".cpp", "cpp": ".cpp"}
+LANG_EXT = {
+    "python": ".py",
+    "python3": ".py",
+    "c++": ".cpp",
+    "cpp": ".cpp",
+    "java": ".java",
+}
+# Java needs the file named after its public class, hence the capitalised one
+SOLUTION_GLOBS = ("solution.*", "Solution.java")
 FONT = "system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif"
 
 # charts sit two-per-row in the README grid, so they are drawn at roughly the
@@ -80,7 +88,7 @@ class Problem:
     acceptance_rate: float | None
     url: str
     solutions: list[Solution] = field(default_factory=list)
-    # repo-relative paths of the solution.* files found on disk
+    # repo-relative paths of the SOLUTION_GLOBS files found on disk
     solution_files: list[str] = field(default_factory=list)
 
     @property
@@ -181,10 +189,14 @@ def parse_info_md(directory: Path) -> tuple[Problem | None, str | None]:
     if not solutions:
         return None, "solutions table has no data row"
 
+    # a set, since case-insensitive filesystems can match a file to both globs
     solution_files = sorted(
-        f"{directory.name}/{path.name}"
-        for path in directory.glob("solution.*")
-        if path.is_file()
+        {
+            f"{directory.name}/{path.name}"
+            for pattern in SOLUTION_GLOBS
+            for path in directory.glob(pattern)
+            if path.is_file()
+        }
     )
 
     problem = Problem(
