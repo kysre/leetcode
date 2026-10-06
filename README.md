@@ -3,20 +3,20 @@
 My solved LeetCode problems, one directory per question.
 This page is generated from every `info.md` by [`generate_readme.py`](generate_readme.py).
 
-![Solved: 44](https://img.shields.io/badge/Solved-44-4c8eda) ![Easy: 14](https://img.shields.io/badge/Easy-14-00b8a3) ![Medium: 27](https://img.shields.io/badge/Medium-27-ffb800) ![Hard: 3](https://img.shields.io/badge/Hard-3-ff375f)
+![Solved: 45](https://img.shields.io/badge/Solved-45-4c8eda) ![Easy: 14](https://img.shields.io/badge/Easy-14-00b8a3) ![Medium: 28](https://img.shields.io/badge/Medium-28-ffb800) ![Hard: 3](https://img.shields.io/badge/Hard-3-ff375f)
 
 ## 📊 At a glance
 
 | | |
 |:--|:--|
-| **Problems solved** | 44 |
-| **Submissions recorded** | 44 |
-| **Easy** | `██████░░░░░░░░░░░░░░` 14 (32%) |
-| **Medium** | `████████████░░░░░░░░` 27 (61%) |
+| **Problems solved** | 45 |
+| **Submissions recorded** | 45 |
+| **Easy** | `██████░░░░░░░░░░░░░░` 14 (31%) |
+| **Medium** | `████████████░░░░░░░░` 28 (62%) |
 | **Hard** | `█░░░░░░░░░░░░░░░░░░░` 3 (7%) |
-| **Languages** | Python (38), Java (5), C++ (1) |
-| **Avg. runtime beats** | 56.6% |
-| **Avg. memory beats** | 58.4% |
+| **Languages** | Python (38), Java (6), C++ (1) |
+| **Avg. runtime beats** | 55.8% |
+| **Avg. memory beats** | 58.7% |
 | **First solve** | Jun 08, 2022 |
 | **Latest solve** | Oct 07, 2026 (today) |
 | **Longest streak** | 11 day(s) |
@@ -62,7 +62,8 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 
 | Date | # | Problem | Difficulty | Language | Runtime beats | Memory beats | Code |
 |:--|--:|:--|:--|:--|--:|--:|:-:|
-| 2026-10-07 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/) | Medium | Java | 85.45% | — | [📄](0151_reverse-words-in-a-string/Solution.java) |
+| 2026-10-07 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) | Medium | Java | 21.47% | 73.09% | [📄](0208_implement-trie-prefix-tree/Solution.java) |
+| 2026-10-07 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/) | Medium | Java | 85.45% | 57.62% | [📄](0151_reverse-words-in-a-string/Solution.java) |
 | 2026-10-06 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/description/) | Easy | Python | 100.00% | 54.83% | [📄](0058_length-of-last-word/solution.py) |
 | 2026-10-06 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | Medium | Java | 100.00% | 28.65% | [📄](0033_search-in-rotated-sorted-array/Solution.java) |
 | 2026-10-01 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) | Easy | Java | 5.98% | 57.83% | [📄](0205_isomorphic-strings/Solution.java) |
@@ -71,7 +72,6 @@ This page is generated from every `info.md` by [`generate_readme.py`](generate_r
 | 2026-09-21 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) | Hard | Python | 93.68% | 13.64% | [📄](0124_binary-tree-maximum-path-sum/solution.py) |
 | 2026-09-16 | 68 | [Text Justification](https://leetcode.com/problems/text-justification/description/) | Hard | Python | 100.00% | 52.63% | [📄](0068_text-justification/solution.py) |
 | 2026-09-15 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/) | Medium | Python | 100.00% | 70.72% | [📄](0199_binary-tree-right-side-view/solution.py) |
-| 2026-09-08 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | Python | 5.01% | 19.69% | [📄](0215_kth-largest-element-in-an-array/solution.py) |
 
 ---
 
